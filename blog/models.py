@@ -37,6 +37,10 @@ class Post(models.Model):
         return reverse("single", args=[str(self.id)])
 
 
+class TestModel(TestCase):
+    def test_category(self):
+        category = create_category() 
+
 
 
 
