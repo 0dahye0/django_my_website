@@ -38,5 +38,30 @@ class Post(models.Model):
 
 
 
+   #확실하지는 않은데 혹시 도움이 될까 싶어서 코드 적어 놓을게요! 좋아요 버튼
+
+    <body>
+
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
+                 &version={graph-api-version}
+                 &appId={your-facebook-app-id}
+                 &autoLogAppEvents=1" 
+            nonce="FOKrbAYI">
+      </script>
+
+      <!-- Your like button code -->
+      <div class="fb-like" 
+           data-href="https://www.your-domain.com/your-page.html" 
+           data-width=""
+           data-layout="standard" 
+           data-action="like" 
+           data-size="small"  
+           data-share="true">
+      </div>
+
+    </body>
 
 
